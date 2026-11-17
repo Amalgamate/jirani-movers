@@ -50,8 +50,8 @@ p{margin:0}a{color:inherit}img,svg{max-width:100%}
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;margin-inline:calc(-1*var(--gut)) calc(-1*var(--gutr));padding-inline:var(--gut) var(--gutr);background:rgba(255,255,255,.92);backdrop-filter:blur(10px)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#fff;z-index:50}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.65rem}
-.logo{display:flex;text-decoration:none;--lj:var(--green);--lm:var(--amber);--ls:var(--muted)}
-.logo svg{height:50px;width:auto}
+.logo{display:flex;align-items:center;text-decoration:none;flex:none}
+.logo img{display:block;width:auto;height:50px;max-width:min(210px,38vw);object-fit:contain}
 nav ul{display:flex;gap:1.7rem;list-style:none;margin:0;padding:0;align-items:center}
 nav a{text-decoration:none;font-family:var(--font-d);font-weight:500;font-size:.92rem;position:relative;padding-block:.3rem}
 nav a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-2px;height:3px;border-radius:3px;width:0;background:var(--amber);transition:width .25s}
@@ -315,13 +315,6 @@ footer a:hover{color:#fff;text-decoration:underline}
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-<symbol id="logo" viewBox="0 0 190 64">
-<path d="M20 48 A22 22 0 1 1 46 52" fill="none" style="stroke:var(--lm)" stroke-width="4.5" stroke-linecap="round"/>
-<path d="M44 58 L50 50 L40 49 Z" style="fill:var(--lm)"/>
-<text style="fill:var(--lj)" x="40" y="34" font-family="Poppins,sans-serif" font-weight="800" font-size="30" letter-spacing="1">JIRANI</text>
-<text style="fill:var(--lm)" x="66" y="52" font-family="Poppins,sans-serif" font-weight="700" font-size="20" font-style="italic">Movers</text>
-<text style="fill:var(--ls)" x="14" y="62" font-family="Raleway,sans-serif" font-weight="600" font-size="8.5" font-style="italic">Always moving you forward</text>
-</symbol>
 <symbol id="houses" viewBox="0 0 960 120"><g stroke="#0D2A1A" stroke-width="2.5" stroke-linejoin="round">
 <rect x="40" y="50" width="90" height="70" fill="#fff"/><polygon points="30,52 85,8 140,52" fill="#C2651A"/><rect x="72" y="80" width="26" height="40" fill="#17A24B"/><rect x="48" y="62" width="16" height="16" fill="#E8F6EC"/>
 <circle cx="190" cy="70" r="30" fill="#17A24B"/><rect x="186" y="98" width="8" height="22" fill="#C2651A"/>
@@ -342,7 +335,7 @@ footer a:hover{color:#fff;text-decoration:underline}
 <path d="M314 52 L355 52 L384 88 L314 88Z" fill="#E8F6EC"/>
 <rect x="398" y="124" width="10" height="14" rx="3" fill="#FFE9A8"/>
 </g>
-</defs></svg><header class="top"><div class="wrap bar"><a class="logo" href="index.html" aria-label="Jirani Movers home"><svg viewBox="0 0 190 64" role="img" aria-label="Jirani Movers logo"><use href="#logo"/></svg></a><nav aria-label="Main"><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuList">Menu</button><ul id="menuList"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="how-it-works.html" aria-current="page">How it works</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a class="btn btn-a" href="https://wa.me/254724548002?text=Hi%20Jirani%20Movers%2C%20I%27d%20like%20a%20free%20quote" target="_blank" rel="noopener">Free quote</a></li></ul></nav></div></header><main><div class="wrap"><div class="phero"><div><p class="crumbs"><a href="index.html">Home</a> / How it works</p><h1>Call us. We <span>do the rest.</span></h1><p class="lead" style="margin-top:1.2rem">A simple four-step move, with nothing hidden and no surprises on the day.</p></div><div class="pstage"><img src="1 (2).png" alt="Jirani Movers truck on the road" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div></div><section style="padding-top:1rem"><div class="routebox rv" id="routeBox"><svg viewBox="0 0 1200 220" role="img" aria-label="A route with four stops: call, price, pack and load, set up">
+</defs></svg><header class="top"><div class="wrap bar"><a class="logo" href="index.html" aria-label="Jirani Movers home"><img src="jirani%20movers%20logo.png" alt="Jirani Movers" width="210" height="50"></a><nav aria-label="Main"><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuList">Menu</button><ul id="menuList"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="how-it-works.html" aria-current="page">How it works</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="moving-checklist.html">Moving checklist</a></li><li><a class="btn btn-a" href="https://wa.me/254724548002?text=Hi%20Jirani%20Movers%2C%20I%27d%20like%20a%20free%20quote" target="_blank" rel="noopener">Free quote</a></li></ul></nav></div></header><main><div class="wrap"><div class="phero"><div><p class="crumbs"><a href="index.html">Home</a> / How it works</p><h1>Call us. We <span>do the rest.</span></h1><p class="lead" style="margin-top:1.2rem">A simple four-step move, with nothing hidden and no surprises on the day.</p></div><div class="pstage"><img src="1 (2).png" alt="Jirani Movers truck on the road" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div></div><section style="padding-top:1rem"><div class="routebox rv" id="routeBox"><svg viewBox="0 0 1200 220" role="img" aria-label="A route with four stops: call, price, pack and load, set up">
 <path id="routePath" d="M60 170 L1140 170" fill="none" stroke="#E3EAE4" stroke-width="16" stroke-linecap="round"/>
 <path d="M60 170 L1140 170" fill="none" stroke="#17A24B" stroke-width="4" stroke-dasharray="4 18" stroke-linecap="round"/>
 <g class="pin"><circle r="26"/><text>1</text></g><g class="pin"><circle r="26"/><text>2</text></g><g class="pin"><circle r="26"/><text>3</text></g><g class="pin"><circle r="26"/><text>4</text></g>
@@ -376,7 +369,7 @@ footer a:hover{color:#fff;text-decoration:underline}
           <li><a href="services.html">Services</a></li>
           <li><a href="how-it-works.html">How it works</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li><li><a href="moving-checklist.html">Moving checklist</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
