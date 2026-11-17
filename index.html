@@ -49,7 +49,7 @@ p{margin:0}a{color:inherit}img,svg{max-width:100%}
 
 /* header + progress road */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;margin-inline:calc(-1*var(--gut)) calc(-1*var(--gutr));padding-inline:var(--gut) var(--gutr);background:rgba(255,255,255,.92);backdrop-filter:blur(10px)}
-.citybar{display:flex;justify-content:center;align-items:center;gap:.45rem;min-height:28px;padding:.2rem 1rem;background:var(--green-tint);color:var(--green-deep);font:500 .72rem var(--font-d);letter-spacing:.025em;text-align:center}
+.citybar{display:flex;justify-content:center;align-items:center;gap:.45rem;min-height:30px;margin-inline:calc(-1*var(--gut)) calc(-1*var(--gutr));padding:.25rem var(--gut);background:var(--green-deep);color:#fff;font:500 .72rem var(--font-d);letter-spacing:.025em;text-align:center}
 .citybar .dot{color:var(--amber);font-weight:800}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#fff;z-index:50}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.65rem}
@@ -74,6 +74,7 @@ nav a.btn{padding:.75rem 1.2rem;font-size:.9rem}
 .hero-copy{display:grid;gap:1.4rem;position:relative;z-index:2}
 .hero h1{font-size:clamp(2.6rem,7.5vw,5rem);font-weight:700;text-transform:none;letter-spacing:-.03em}
 .hero h1 .l2{display:block;color:var(--green);position:relative;width:fit-content}
+.hero h1 .l2::after{content:"";position:absolute;left:0;right:2%;bottom:-.015em;height:.07em;border-radius:50% 42% 48% 45%;background:var(--amber);transform:rotate(-1.2deg)}
 .lead{font-size:1.05rem;color:var(--muted);max-width:54ch;line-height:1.75;font-weight:400}
 .regional-reach{font-family:var(--font-d);font-size:.82rem;font-weight:500;line-height:1.8;color:var(--muted)}
 .regional-reach strong{color:var(--ink);font-weight:700}
