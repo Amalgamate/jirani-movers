@@ -231,11 +231,19 @@ section{padding-block:clamp(3.5rem,8vw,7rem)}
 
 /* cta band */
 .cta{background:var(--ink);color:#fff;clip-path:polygon(0 var(--cut),100% 0,100% 100%,0 100%);padding-block:calc(var(--cut) + 3.5rem) 4rem;position:relative;overflow:hidden}
-.cta::after{content:"";position:absolute;right:-80px;bottom:-80px;width:320px;height:320px;background:var(--amber);border-radius:50%;opacity:.9}
-.cta .wrap{display:grid;gap:1.2rem;position:relative;z-index:1}
-.cta h2{font-size:clamp(2.4rem,6vw,3rem);font-weight:700;max-width:14ch}
-.cta .ph{font-family:var(--font-d);font-weight:800;font-size:clamp(2rem,5vw,3.6rem);color:var(--amber-light);user-select:all}
-.cta p{max-width:48ch;opacity:.85}
+.cta::after{content:"";position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;background:var(--amber);border-radius:50%;opacity:.25}
+.cta::before{content:"";position:absolute;left:-120px;top:-120px;width:400px;height:400px;background:var(--green-deep);border-radius:50%;opacity:.6}
+.cta .wrap{display:grid;grid-template-columns:1fr;gap:3rem;position:relative;z-index:1;align-items:center}
+@media(min-width:860px){.cta .wrap{grid-template-columns:1fr auto}}
+.cta-left{display:grid;gap:1rem}
+.cta h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;max-width:14ch;line-height:1.12}
+.cta-sub{opacity:.75;font-size:1.05rem;max-width:40ch}
+.cta-panel{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:24px;padding:2rem 2.2rem;display:grid;gap:1.2rem;min-width:280px;backdrop-filter:blur(8px)}
+.cta-panel-label{font-family:var(--font-d);font-weight:500;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+.cta .ph{font-family:var(--font-d);font-weight:700;font-size:clamp(1.8rem,4vw,2.6rem);color:#fff;user-select:all;line-height:1;text-decoration:none;display:block}
+.cta .ph:hover{color:var(--amber-light)}
+.cta-panel .cta-row{display:flex;flex-direction:column;gap:.7rem}
+.cta-panel .cta-row .btn{justify-content:center;width:100%}
 
 /* contact */
 .quote{display:grid;gap:2.5rem;align-items:start}
@@ -345,8 +353,7 @@ footer a:hover{color:#fff;text-decoration:underline}
 <div class="stop rv d1"><span class="n">2</span><h3>Get a clear price</h3><p>We confirm the plan and the cost before moving day, so there are no surprises.</p></div>
 <div class="stop rv d2"><span class="n">3</span><h3>We pack and load</h3><p>Plastic crates, furniture taken apart, everything loaded with care by the team.</p></div>
 <div class="stop rv d3"><span class="n">4</span><h3>Unload and set up</h3><p>Items go into the right rooms and your furniture is put back together.</p></div>
-</div></section><section aria-labelledby="th" style="padding-top:0"><div class="sec-head rv"><p class="eyebrow">Before moving day</p><h2 id="th">Six things that make it smoother.</h2></div><div class="tips rv"><div class="tip"><b>1</b><p><strong>Sort first</strong>Go through each room and decide what stays, goes or gets donated. Less to move costs less.</p></div><div class="tip"><b>2</b><p><strong>Keep essentials with you</strong>ID, documents, jewellery, chargers and medicine travel with you, not on the truck.</p></div><div class="tip"><b>3</b><p><strong>Tell us the tricky parts</strong>Stairs, lifts, narrow gates and parking all change the plan. Mention them when you call.</p></div><div class="tip"><b>4</b><p><strong>Empty the fridge</strong>Clear and defrost the fridge and freezer a day before so they are ready to move.</p></div><div class="tip"><b>5</b><p><strong>Set aside a first-night bag</strong>Pack toiletries, a change of clothes and bedding where you can find them first.</p></div><div class="tip"><b>6</b><p><strong>Point out fragile items</strong>Show the team anything delicate or valuable so it gets extra attention.</p></div></div></section></div><div class="cta full"><div class="wrap"><p class="eyebrow" style="color:#F2B27A">Call now</p><h2>Let us do the heavy lifting.</h2><p class="ph">0724 548 002</p><p>Tell us your date and what you are moving. We will come back with a clear, affordable price.</p>
-<div class="cta-row"><a class="btn btn-a" href="contact.html">Get a free quote</a><a class="btn btn-w" href="tel:+254724548002">Call Jirani Movers</a></div></div></div></main><div class="road" id="road" aria-hidden="true"><i></i><b><svg viewBox="0 0 34 24" aria-hidden="true"><rect x="1" y="2" width="21" height="14" rx="2" fill="#17A24B" stroke="#0D2A1A" stroke-width="1.5"/><path d="M22 6h6l4 5v5H22z" fill="#C2651A" stroke="#0D2A1A" stroke-width="1.5"/><circle cx="8" cy="18" r="3.6" fill="#0D2A1A"/><circle cx="26" cy="18" r="3.6" fill="#0D2A1A"/></svg></b></div>
+</div></section><section aria-labelledby="th" style="padding-top:0"><div class="sec-head rv"><p class="eyebrow">Before moving day</p><h2 id="th">Six things that make it smoother.</h2></div><div class="tips rv"><div class="tip"><b>1</b><p><strong>Sort first</strong>Go through each room and decide what stays, goes or gets donated. Less to move costs less.</p></div><div class="tip"><b>2</b><p><strong>Keep essentials with you</strong>ID, documents, jewellery, chargers and medicine travel with you, not on the truck.</p></div><div class="tip"><b>3</b><p><strong>Tell us the tricky parts</strong>Stairs, lifts, narrow gates and parking all change the plan. Mention them when you call.</p></div><div class="tip"><b>4</b><p><strong>Empty the fridge</strong>Clear and defrost the fridge and freezer a day before so they are ready to move.</p></div><div class="tip"><b>5</b><p><strong>Set aside a first-night bag</strong>Pack toiletries, a change of clothes and bedding where you can find them first.</p></div><div class="tip"><b>6</b><p><strong>Point out fragile items</strong>Show the team anything delicate or valuable so it gets extra attention.</p></div></div></section></div><div class="cta full"><div class="wrap"><div class="cta-left"><p class="eyebrow" style="color:#F2B27A">Ready to move?</p><h2>Let us do the heavy lifting.</h2><p class="cta-sub">Tell us your date and what you need moved. We'll come back with a clear, affordable price — no surprises.</p></div><div class="cta-panel"><p class="cta-panel-label">Call or WhatsApp us</p><a class="ph" href="tel:+254724548002">0724 548 002</a><div class="cta-row"><a class="btn btn-a" href="contact.html">Get a free quote</a><a class="btn btn-w" href="tel:+254724548002">Call Jirani Movers</a></div></div></div></div></main><div class="road" id="road" aria-hidden="true"><i></i><b><svg viewBox="0 0 34 24" aria-hidden="true"><rect x="1" y="2" width="21" height="14" rx="2" fill="#17A24B" stroke="#0D2A1A" stroke-width="1.5"/><path d="M22 6h6l4 5v5H22z" fill="#C2651A" stroke="#0D2A1A" stroke-width="1.5"/><circle cx="8" cy="18" r="3.6" fill="#0D2A1A"/><circle cx="26" cy="18" r="3.6" fill="#0D2A1A"/></svg></b></div>
 <footer class="full">
   <div class="wrap">
     <div class="fgrid">
